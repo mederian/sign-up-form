@@ -1,0 +1,29 @@
+*{
+
+}
+
+#main-flex-container{
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background-image: url(jonathan-bean-sbZU1j31ggE-unsplash.jpg);
+}
+#left-flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    border: 1px solid red;
+}
+#logo-flex-item{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#right-flex-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
