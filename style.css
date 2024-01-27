@@ -1,29 +1,108 @@
-*{
-
+:root{
+    --font-color: white;
+    --font-color-dark: black;
+    --hyperlink-color: white;
+    --button-color: #596D48;
 }
 
+*{
+    color: var(--font-color-dark);
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    font-size: 0.6rem;
+}
+
+a {
+    color: var(--hyperlink-color);
+}
+button {
+    background-color: var(--button-color);
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--font-color)
+}
 #main-flex-container{
     display: flex;
     width: 80%;
     height: 100vh;
-    background-image: url(jonathan-bean-sbZU1j31ggE-unsplash.jpg);
+    
 }
 #left-flex-item{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex: 1;
-    border: 1px solid red;
+    justify-content: space-between;
+    flex: 3;
+    background: url(halie-west-25xggax4bSA-unsplash.jpg);    
+    background-size:cover;
+}
+#left-flex-item div:last-child{
+    color: var(--font-color);
+    text-align: center;
+}
+#left-flex-item div:last-child p{
+    color: var(--font-color);
+    text-align: center;
+}
+#left-flex-item > div {
+    color: var(--font-color);
+}
+
+@font-face {
+    font-family: Norse Bold;
+    src: url(Fonts/Norse-Bold.otf);
 }
 #logo-flex-item{
-    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    font-family: 'Norse Bold', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
 }
 
 #right-flex-item{
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
     background-color: rgba(255, 255, 255, 0.8);
     justify-content: space-evenly;
-    border: 1px solid green;
+}
+#space-flex-item{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#input-section{
+    display: flex;
+    flex-direction: column;
+
+}
+#input-section > div{
+    display: flex;
+    flex:1;
+
+}
+
+#input-section > div > div {
+    display: flex;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+#input-section > div > div > input {
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 4px;
+}
+
+
+
+input:invalid{
+    background-color: rgb(255, 143, 143);
+}
+input:focus{
+    background-color: rgb(208, 208, 229);
 }
