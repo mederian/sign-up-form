@@ -3,15 +3,20 @@
     --font-color-dark: black;
     --hyperlink-color: white;
     --button-color: #596D48;
+    --input-border-color: #E5E7EB;
+    --input-focus-border-color: rgb(45, 71, 157);
+    --input-focus-shadow-color: rgb(161, 161, 161);
+    --input-error-color: rgb(255, 68, 68);
 }
 
 *{
+    margin: 0;
     color: var(--font-color-dark);
     font-size: 12px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 label{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 a {
@@ -94,15 +99,16 @@ button {
     flex-direction: column;
 }
 #input-section > div > div > input {
-    border: 1px solid rgb(185, 185, 185);
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
 }
 
-
-
-input:invalid{
-    background-color: rgb(255, 143, 143);
+#input-section > div > div > input:focus{
+    outline: none;
+    border: 1px solid var(--input-focus-border-color);
+    box-shadow: 1px 1px var(--input-focus-shadow-color);
 }
-input:focus{
-    background-color: rgb(208, 208, 229);
+
+#input-section > div > div > input:invalid{
+    border-color: var(--input-error-color);
 }
