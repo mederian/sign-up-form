@@ -1,6 +1,7 @@
 const password = document.querySelector('#password');
 const confirmPass = document.querySelector('#confirm');
 const passwrodStrength = document.querySelector('#passwordstrength');
+const passwordInstruction = document.querySelector('#passwordinstruction');
 
 const minPasswordLength = 6;
 
@@ -18,9 +19,11 @@ confirmPass.addEventListener('input', function(e){
 password.addEventListener('input', function(e){
     if(validateStrength(password.value)){
         password.setCustomValidity("");
+        passwordInstruction.style.visibility = 'hidden';
     }
     else{
         password.setCustomValidity("Invalid Field");
+        passwordInstruction.style.visibility = 'visible';
     }
 });
 

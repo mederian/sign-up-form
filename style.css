@@ -98,6 +98,9 @@ button {
     padding-bottom: 20px;
     flex-direction: column;
 }
+#passwordinstruction{
+    visibility: visible;
+}
 #input-section > div > div > input {
     border: 1px solid var(--input-border-color);
     border-radius: 4px;
