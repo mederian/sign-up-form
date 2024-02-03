@@ -89,7 +89,11 @@ button {
 #input-section > div{
     display: flex;
     flex:1;
+}
 
+#top-text p{
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 
 #input-section > div > div {
@@ -109,6 +113,7 @@ button {
 #input-section > div > div > input:invalid{
     border-color: var(--input-error-color);
 }
+
 #input-section > div > div > input:focus{
     outline: none;
     border: 1px solid var(--input-focus-border-color);

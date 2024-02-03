@@ -2,6 +2,12 @@ const password = document.querySelector('#password');
 const confirmPass = document.querySelector('#confirm');
 const passwrodStrength = document.querySelector('#passwordstrength');
 const passwordInstruction = document.querySelector('#passwordinstruction');
+const firstname = document.querySelector('#firstname');
+const lastname = document.querySelector('#lastname');
+const email = document.querySelector('#email');
+const phone = document.querySelector('#phone');
+
+
 
 const minPasswordLength = 6;
 

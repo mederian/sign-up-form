@@ -24,11 +24,15 @@
            
         </div>
         <div id="right-flex-item">
-            <div id="top-text">This is not a real service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-
-                You know you want to.
+            <div id="top-text">
+                <p>
+                    This is not a real service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                </p>
+                <p>
+                    You know you want to.
+                </p>
 
             </div>
             <div id="form-container">
@@ -38,21 +42,21 @@
                         <div>
                             <div>
                                 <label>First Name</label>
-                                <input type="text" placeholder="Name" required />
+                                <input id="firstname" type="text" placeholder="Name" required />
                             </div>
                             <div>
                                 <label>Last Name</label>
-                                <input type="text" placeholder="Last Name" required />        
+                                <input id="lastname" type="text" placeholder="Last Name" required />        
                             </div>
                         </div>
                         <div>
                             <div>
                                 <label>Email</label>
-                                <input type="email" placeholder="Email" required />
+                                <input id="email" type="email" placeholder="Email" required />
                             </div>
                             <div>
                                 <label>Phone Number</label>
-                                <input type="number" placeholder="12345678" required />        
+                                <input id="phone" type="number" placeholder="12345678" required />        
                             </div>
                         </div>
                         <div>
@@ -64,6 +68,7 @@
                             <div>
                                 <label>Confirm Password</label>
                                 <input id="confirm" type="password" placeholder="Repeat Password" required />
+                                <p id="passwordmatch">Passwords must match</p>
                             </div>
                         </div>
                     </div>
