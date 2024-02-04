@@ -1,7 +1,7 @@
 :root{
     --font-color: white;
     --font-color-dark: black;
-    --hyperlink-color: white;
+    --hyperlink-color-bright: white;
     --button-color: #596D48;
     --input-border-color: #E5E7EB;
     --input-focus-border-color: rgb(45, 71, 157);
@@ -19,9 +19,7 @@ label{
     font-size: 0.8rem;
 }
 
-a {
-    color: var(--hyperlink-color);
-}
+
 button {
     background-color: var(--button-color);
     border: 0;
@@ -42,6 +40,9 @@ button {
     flex: 3;
     background: url(halie-west-25xggax4bSA-unsplash.jpg);    
     background-size:cover;
+}
+#left-flex-item a {
+    color: var(--hyperlink-color-bright);
 }
 #left-flex-item div:last-child{
     color: var(--font-color);
@@ -88,8 +89,14 @@ button {
 }
 #input-section > div{
     display: flex;
-    flex:1;
 }
+@media screen and (max-width: 480px) {
+    #input-section > div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+  }
 
 #top-text p{
     font-weight: 700;
@@ -103,7 +110,10 @@ button {
     flex-direction: column;
 }
 #passwordinstruction{
-    visibility: visible;
+    visibility: hidden;
+}
+#passwordmatch{
+    visibility: hidden;
 }
 #input-section > div > div > input {
     border: 1px solid var(--input-border-color);

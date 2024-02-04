@@ -2,6 +2,7 @@ const password = document.querySelector('#password');
 const confirmPass = document.querySelector('#confirm');
 const passwrodStrength = document.querySelector('#passwordstrength');
 const passwordInstruction = document.querySelector('#passwordinstruction');
+const passwordmatch = document.querySelector('#passwordmatch');
 const firstname = document.querySelector('#firstname');
 const lastname = document.querySelector('#lastname');
 const email = document.querySelector('#email');
@@ -16,9 +17,11 @@ confirmPass.addEventListener('input', function(e){
     if(confirmPass.value === password.value){
         console.log("MATCH");
         confirmPass.setCustomValidity("");
+        passwordmatch.style.visibility = 'hidden';
     }
     else{
         confirmPass.setCustomValidity("Invalid Field");
+        passwordmatch.style.visibility = 'visible';
     }
 });
 
